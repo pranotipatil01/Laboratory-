@@ -1,0 +1,212 @@
+:root{
+    --bs--blue--:#031b4e;
+    --bs-green--:#21cdad;
+    --bs--white--:white;
+}
+.txt-green{
+    color: var(--bs-green--);
+}
+.txt-blue{
+    color: var(--bs--blue--);
+}
+.bg-blue{
+    background-color: var(--bs--blue--);
+}
+/* navbar */
+  .navbar-scrolled{
+    background-color: #031b4e;
+    color: white;
+  }
+/* herosection */
+.hero-btn{
+    background-color: var(--bs-green--);
+    color: var(--bs--white--);
+}
+
+
+
+.carousel-inner::after{
+   
+    position: absolute;
+    display:block;
+    top:0;
+    left: 0;
+    right:0;
+    background: linear-gradient(#6cead3,#4f7cde,#031b4e);
+}
+
+/* cards */
+
+.hcard{
+    background-color: var(--bs--blue--);
+    color: var(--bs--white--);
+    
+}
+/* about */
+#about{
+    position: relative;
+}
+.aboutimg{
+    position:absolute;
+    left:345px;
+    top: 60px;
+    
+}
+.animation{
+    position: absolute;
+    left:100px;
+    top:350px;
+}
+.contain{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.image {
+    background-image: url(../images/Iullstration/biology13.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: rotate 10s linear infinite;
+}
+
+.text {
+    background-color: var(--bs--blue--);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* service */
+#services{
+    background-color:var(--bs--blue--);
+    background-image: url(../images/background/biology20.png);
+    background-repeat: no-repeat;
+}
+.scard{
+    background-color: var(--bs-green--);
+}
+/* choose */
+.heading{
+    background-color: var(--bs-green--);
+    padding: 40px;
+}
+.choose-pill{
+    background-color: var(--bs--blue--);
+    color: var(--bs--white--);
+
+}
+/* testimonials */
+#tesrimonials{
+    background-image: url(../images/background/biology30.jpg);
+}
+
+.quote{
+    color: var(--bs-green--);
+}
+/* counter */
+#counter{
+    background-color: var(--bs-green--);
+    padding: 50px;
+}
+.counter-card{
+    background-color: var(--bs-green--);
+    color: var(--bs--white--);
+}
+/* blog */
+.news-card{
+    margin:-50px 15px 0px 15px;
+}
+/* footer */
+#footer{
+    background-color: var(--bs--blue--);
+    color: var(--bs--white--);
+}
+#about,#services,#choose,#team,#testimonials,#counter,#blog{
+    margin-bottom: 50px;
+
+}
+ul{
+    list-style: none;
+}
+
+@media only screen and (min-width:768px){
+    .carousel-inner{
+        position: relative;
+        height: 500px;
+    }
+    .carousel-caption {
+        bottom: 200px;
+        padding: 0px 100px;
+        line-height: 40px;
+    }
+    .title{
+        text-shadow: 0px 0px 5px var(--bs--white--);
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .fcard{
+        margin-top: -150px;
+        
+       
+    }
+    .about2{
+        margin-top: 120px;
+    }
+    .hcard {
+       
+        margin-top: -22px;
+    }
+    
+  }
+
+  @media only screen and (min-width:1200px){
+    .carousel-caption {
+        bottom: 500px;
+        padding: 0px 100px;
+        line-height: 40px;
+    }
+   
+    .title{
+        text-shadow: 0px 0px 5px var(--bs--white--);
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .hcard {
+       
+        margin-top: -40px;
+        padding: 20px;
+    }
+    .client-card{
+    
+        padding: 10px 120px;
+    }
+    .tab-btn{
+        margin-top: -14px;
+    }
+  }
+
+  @media only screen and (min-width:1440px){
+    .carousel-caption{
+        bottom: 644px;
+    }
+  }
